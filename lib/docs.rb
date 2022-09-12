@@ -44,7 +44,40 @@ module Docs
   end
 
   def self.defaults
-    %w(css dom html http javascript).map(&method(:find))
+    defaults = %w(
+      css
+      dom
+      html
+      javascript
+      tailwindcss
+      sass
+      bootstrap
+
+      git
+      web_extensions
+      http
+      mdn
+      gnu
+      cmake
+
+      c
+      go
+      nix
+      rust
+      elixir
+      phoenix
+      erlang
+      clojure
+      haskell
+      typescript
+
+      sqlite
+      redis
+      nginx
+      docker
+      postgresql
+    )
+    defaults.map(&method(:find))
   end
 
   def self.installed
