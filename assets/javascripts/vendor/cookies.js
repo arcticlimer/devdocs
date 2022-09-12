@@ -28,8 +28,7 @@
 
         Cookies.defaults = {
             path: '/',
-            SameSite: 'Strict',
-            secure: true
+            SameSite: 'Strict'
         };
 
         Cookies.get = function (key) {
